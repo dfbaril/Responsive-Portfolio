@@ -1,0 +1,73 @@
+<!doctype HTML>
+<!-- So some of this code is a little janky and "hacked". Even so, I can't always get the 
+    footer to stay on the bottom of the page, without being fixed (but then it's fixed...)
+     But hey, it works on my 1440p display, so it must work on all devices.
+     Also, there are a lot of CSS properties that are redundant, but I'll fix it later. -->
+<html lang="en-us">
+    <head>
+        <title>Dain Baril - Portfolio Homepage</title>
+        <!-- This reset changes the margins, spacing, and text for the most part.
+            I'll leave the .css file here, commented out. I think it might be 
+            beneficial at a later date.
+            <link rel="stylesheet" type="text/css" href="./assets/css/reset.css"> -->
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.css"> 
+        <!-- link to future scripts.
+            <script src="./assets/scripts/script.js"></script> -->
+    </head>
+
+    <!-- Header, it has 1 container, then 1 div on the left, 1 on the right -->
+    <header>
+        <div class="container">
+            <!-- I can't figure out how to get this to stick all the way to the top -->
+            <div id="logo">
+                <h1>Dain Baril</h1>
+            </div>
+
+    
+            <nav>
+                <ul>
+                    <li><a href="./index.html">About Me</a></li>|
+                    <li><a href="./portfolio.html">Portfolio</a></li>|
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+                
+            </nav>
+        </div>
+    </header>
+
+    <!-- body has a container, then 1 div on the right and one on the left
+        I found the container to be necessary to keep the width 960px -->
+    <body>
+    <div class="container">
+        <div class="content"> 
+            <h2>About the Author</h2>
+            <img src="./assets/images/HaBusiness.jpg" style="float:left">
+                
+            <p>Dain Baril is an individual with a burgeoning interest in web-development. He created this site primarily to learn about HTML and CSS, and how they interact together. His main interests are in the history of antiquity, especially military history, and motorsports. Dain has wanted to be everything from a professional chess player to a racecar driver, but it seems he can't stay focused on anything for long. He appreciates rhetoric, strong leadership, efficient workplaces, and people who are just way too goofy. He has been told that he's a little too serious, but those people don't realize that his favorite jokes usually involve fart noises.</p>
+                
+            </div>
+            
+        <div id="connect">
+    
+                <!--Img link to stackoverflow and icon-->
+            <a href="http://stackoverflow.com"><img src="./assets/images/stackoverflow.png" height="60px" width="60px" style="margin:10px"></a>
+                <!-- Img link to linkedin and icon -->
+            <a href="http://linkedin.com"><img src="./assets/images/linkedin.png" height="60px" width="60px" style="margin:10px"></a>
+                <!-- IMG link to github and icon -->
+            <a href="http://github.com"><img src="./assets/images/github.png" height="60px" width="60px" style="margin:10px"></a>
+        </div>
+       
+        
+    </div>
+
+
+    <!--this is the footer-->
+    <footer>
+        
+        <div style="margin-top:30px">Copyright 2018 Dain Baril</div>
+    
+    </footer>
+    </body>
+    
+
+</html>

@@ -1,0 +1,112 @@
+<!doctype HTML>
+<!-- So some of this code is a little janky and "hacked". Style in the markup abounds.
+     But hey, it works on my 1440p display, so it must work on all devices.
+     Also, there are a lot of CSS properties that are redundant, but I'll fix it later. -->
+<html lang="en-us">
+    <head>
+        <title>Dain Baril - Portfolio Homepage</title>
+        <!-- This reset changes the margins, spacing, and text for the most part.
+            I'll leave the .css file here, commented out. I think it might be 
+            beneficial at a later date.
+            <link rel="stylesheet" type="text/css" href="./assets/css/reset.css"> -->
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.css"> 
+        <script src="script.js"></script>
+    </head>
+
+    <!-- Header, it has 1 container, then 1 div on the left, 1 on the right -->
+    <header>
+        <div class="container">
+            <!-- I can't figure out how to get this to stick all the way to the top -->
+            <div id="logo">
+                <h1>Dain Baril</h1>
+            </div>
+
+    
+            <nav>
+                <ul>
+                    <li><a href="./index.html">About Me</a></li>|
+                    <li><a href="./portfolio.html">Portfolio</a></li>|
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+                
+            </nav>
+        </div>
+    </header>
+
+    <!-- body has a container, then 1 div on the right and one on the left
+        I found the container to be necessary to keep the width 960px -->
+    <body>
+    <div class="container">
+        <div class="content"> 
+            <h2>Contact me!</h2>
+          <br>
+          <form name="htmlform" method="post" action="html_form_send.php">
+            <table width="450px">
+            </tr>
+            <tr>
+             <td valign="top">
+              <label for="first_name">First Name *</label>
+             </td>
+             <td valign="top">
+              <input  type="text" name="first_name" maxlength="15" size="30">
+             </td>
+            </tr>
+             
+            <tr>
+             <td valign="top"">
+              <label for="last_name">Last Name *</label>
+             </td>
+             <td valign="top">
+              <input  type="text" name="last_name" maxlength="20" size="30">
+             </td>
+            </tr>
+            <tr>
+             <td valign="top">
+              <label for="email">Email Address *</label>
+             </td>
+             <td valign="top">
+              <input  type="text" name="email" maxlength="40" size="30">
+             </td>
+             
+            </tr>
+            
+            <tr>
+             <td valign="top">
+              <label for="comments">Comments *</label>
+             </td>
+             <td valign="top">
+              <textarea  name="comments" maxlength="300" cols="25" rows="6"></textarea>
+             </td>
+             
+            </tr>
+            <tr>
+             <td colspan="2" style="text-align:center">
+              <input type="submit" value="Submit">
+             </td>
+            </tr>
+            </table>
+            </form>  
+        </div>
+            
+        <div id="connect">
+    
+                <!--Img link to stackoverflow and icon-->
+            <a href="http://stackoverflow.com"><img src="./assets/images/stackoverflow.png" height="60px" width="60px" style="margin:10px"></a>
+                <!-- Img link to linkedin and icon -->
+            <a href="http://linkedin.com"><img src="./assets/images/linkedin.png" height="60px" width="60px" style="margin:10px"></a>
+                <!-- IMG link to github and icon -->
+            <a href="http://github.com"><img src="./assets/images/github.png" height="60px" width="60px" style="margin:10px"></a>
+        </div>
+       
+        
+    </div>
+    <footer>
+        
+        <div style="margin-top:30px">Copyright 2018 Dain Baril</div>
+    
+    </footer>
+    </body>
+    <!--this is the footer-->
+    
+
+</html>
